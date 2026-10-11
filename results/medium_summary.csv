@@ -1,0 +1,21 @@
+k,mean,std_repeat,std_subset,model,metric
+0,0.7362,0.0098,0.0,RBF-SVM,accuracy
+1,0.5912,0.0109,0.0766,RBF-SVM,accuracy
+2,0.5093,0.0107,0.0919,RBF-SVM,accuracy
+4,0.4386,0.0093,0.0647,RBF-SVM,accuracy
+8,0.3058,0.0084,0.0601,RBF-SVM,accuracy
+0,0.7362,0.0092,0.0,RBF-SVM,macro_f1
+1,0.5776,0.0127,0.0777,RBF-SVM,macro_f1
+2,0.493,0.0116,0.0949,RBF-SVM,macro_f1
+4,0.4115,0.0107,0.073,RBF-SVM,macro_f1
+8,0.263,0.0105,0.0655,RBF-SVM,macro_f1
+0,0.6734,0.0112,0.0,RBF-SVM + sensor dropout,accuracy
+1,0.6583,0.0133,0.0185,RBF-SVM + sensor dropout,accuracy
+2,0.6457,0.0159,0.0252,RBF-SVM + sensor dropout,accuracy
+4,0.6228,0.0192,0.0356,RBF-SVM + sensor dropout,accuracy
+8,0.5485,0.0175,0.0611,RBF-SVM + sensor dropout,accuracy
+0,0.6682,0.0112,0.0,RBF-SVM + sensor dropout,macro_f1
+1,0.6531,0.0132,0.0191,RBF-SVM + sensor dropout,macro_f1
+2,0.6402,0.0159,0.0269,RBF-SVM + sensor dropout,macro_f1
+4,0.6171,0.0191,0.0396,RBF-SVM + sensor dropout,macro_f1
+8,0.5411,0.0191,0.0634,RBF-SVM + sensor dropout,macro_f1

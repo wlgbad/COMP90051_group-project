@@ -1,0 +1,8 @@
+gas+sensor+array+drift+dataset+at+different+concentrations/
+phase1_output/
+__pycache__/
+cache/
+
+# Local-only context, never pushed
+CLAUDE.md
+Project.pdf
