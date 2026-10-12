@@ -1,0 +1,13 @@
+{
+  "outer_repeat": 5,
+  "learning_rate": 0.0055,
+  "inner_split": 2,
+  "n_train": 2909,
+  "n_val": 1849,
+  "seed": 140053,
+  "best_macro_f1": 0.8040472005277106,
+  "accuracy_at_best_f1": 0.8761492698756085,
+  "best_epoch": 8,
+  "epochs_executed": 18,
+  "runtime_seconds": 30.14
+}
