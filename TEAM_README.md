@@ -6,9 +6,9 @@
 
 | Name | Student ID | Model / main role |
 |---|---|---|
-| Bin Xing | 1634582 | XGBoost (branch `XGBoost`) |
+| Bin Xing | 1634582 | Decision Tree |
 | Chenguang Shen | 1709322 | Transformer model |
-| Jiaxin He | 1455893 | Regression |
+| Jiaxin He | 1455893 | SVM |
 
 - **Weekly meeting:** every Wednesday, 3 pm (at least 3 meetings are required; minutes go in `meetings/`)
 - **Repo:** `wlgbad/COMP90051_group-project`
@@ -52,11 +52,11 @@ URL: <https://archive.ics.uci.edu/dataset/270/gas+sensor+array+drift+dataset>
 
 | Complexity | Model | Owner | Tuned hyperparameters (≥ 3 values each) |
 |---|---|---|---|
-| Simple | Regression (e.g. multinomial logistic) | Jiaxin | e.g. regularisation strength $C$ |
-| Medium | XGBoost | Bin | e.g. `max_depth`, `learning_rate`, `n_estimators` |
+| Simple | Decision Tree | Bin | e.g. `max_depth`, `min_samples_leaf` |
+| Medium | SVM (RBF kernel) | Jiaxin | e.g. $C$, $\gamma$ |
 | Complex | Transformer model (e.g. FT-Transformer, NeurIPS 2021) | Chenguang | e.g. number of layers, embedding dim, dropout |
 
-> Note: XGBoost appeared in 2016 (KDD), so it does **not** count as the post-2017 paper model. Candidates that do count include LightGBM (NeurIPS 2017) and CatBoost (NeurIPS 2018).
+> The Transformer is the post-2017 paper model.
 
 ### Evaluation (spec 2.e–2.g): all written from scratch
 - [ ] Outer CV: k-fold with $k \ge 10$ (or ≥ 10 repeated splits, or bootstrap $B \ge 10$). The **same scheme for all 3 models.**
@@ -87,7 +87,7 @@ URL: <https://archive.ics.uci.edu/dataset/270/gas+sensor+array+drift+dataset>
 
 ## Workflow
 
-- One branch per model or feature (e.g. `XGBoost`). Merge into `main` after the team agrees.
+- One branch per model or feature (e.g. `decision-tree`). Merge into `main` after the team agrees.
 - Review your own code before you push. Never push data or large result files.
 - Fix shared things (random seeds, fold indices, the feature table) **once**, so all three models use identical folds.
 - Decisions are made together at meetings and written in `meetings/`.
