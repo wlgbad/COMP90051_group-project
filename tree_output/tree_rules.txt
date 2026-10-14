@@ -1,0 +1,527 @@
+===== Outer repeat 1 | params {'max_depth': 5, 'min_samples_leaf': 20, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.09
+|   |--- drpair_s11_s12 <= -0.27
+|   |   |--- drpair_s2_s4 <= 0.53
+|   |   |   |--- class: 0
+|   |   |--- drpair_s2_s4 >  0.53
+|   |   |   |--- drpair_s6_s11 <= 2.92
+|   |   |   |   |--- class: 5
+|   |   |   |--- drpair_s6_s11 >  2.92
+|   |   |   |   |--- class: 5
+|   |--- drpair_s11_s12 >  -0.27
+|   |   |--- drpair_s2_s6 <= 0.63
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.09
+|   |   |   |   |--- drpair_s4_s10 <= -0.96
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- drpair_s4_s10 >  -0.96
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.09
+|   |   |   |   |--- slog_s3_absDR <= -1.51
+|   |   |   |   |   |--- class: 3
+|   |   |   |   |--- slog_s3_absDR >  -1.51
+|   |   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.63
+|   |   |   |--- drpair_s11_s12 <= 0.96
+|   |   |   |   |--- drpair_s5_s13 <= -1.41
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- drpair_s5_s13 >  -1.41
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s11_s12 >  0.96
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.09
+|   |--- drpair_s7_s14 <= -0.27
+|   |   |--- drpair_s7_s8 <= -0.36
+|   |   |   |--- drcomp_s5 <= 0.71
+|   |   |   |   |--- class: 2
+|   |   |   |--- drcomp_s5 >  0.71
+|   |   |   |   |--- class: 2
+|   |   |--- drpair_s7_s8 >  -0.36
+|   |   |   |--- class: 2
+|   |--- drpair_s7_s14 >  -0.27
+|   |   |--- drpair_s3_s4 <= -0.04
+|   |   |   |--- class: 1
+|   |   |--- drpair_s3_s4 >  -0.04
+|   |   |   |--- drcomp_s6 <= 1.68
+|   |   |   |   |--- drpair_s1_s15 <= -2.31
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- drpair_s1_s15 >  -2.31
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- drcomp_s6 >  1.68
+|   |   |   |   |--- class: 1
+
+
+===== Outer repeat 2 | params {'max_depth': 5, 'min_samples_leaf': 50, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.10
+|   |--- drpair_s11_s12 <= -0.25
+|   |   |--- balance_s10_a0.001 <= -0.10
+|   |   |   |--- class: 5
+|   |   |--- balance_s10_a0.001 >  -0.10
+|   |   |   |--- slog_s2_EMAd0.1 <= -0.62
+|   |   |   |   |--- class: 5
+|   |   |   |--- slog_s2_EMAd0.1 >  -0.62
+|   |   |   |   |--- class: 5
+|   |--- drpair_s11_s12 >  -0.25
+|   |   |--- drpair_s2_s6 <= 0.62
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.09
+|   |   |   |   |--- drpair_s4_s10 <= -0.95
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- drpair_s4_s10 >  -0.95
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.09
+|   |   |   |   |--- slog_s3_EMAi0.01 <= -0.36
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- slog_s3_EMAi0.01 >  -0.36
+|   |   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.62
+|   |   |   |--- drpair_s4_s8 <= 0.03
+|   |   |   |   |--- drpair_s5_s14 <= -1.06
+|   |   |   |   |   |--- class: 4
+|   |   |   |   |--- drpair_s5_s14 >  -1.06
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s4_s8 >  0.03
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.10
+|   |--- drpair_s7_s14 <= -0.26
+|   |   |--- alpha_EMAd_0.01vs0.001_s16 <= 0.09
+|   |   |   |--- slog_s5_EMAi0.1 <= -2.31
+|   |   |   |   |--- class: 2
+|   |   |   |--- slog_s5_EMAi0.1 >  -2.31
+|   |   |   |   |--- slog_s16_absDR <= -1.64
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- slog_s16_absDR >  -1.64
+|   |   |   |   |   |--- class: 2
+|   |   |--- alpha_EMAd_0.01vs0.001_s16 >  0.09
+|   |   |   |--- class: 2
+|   |--- drpair_s7_s14 >  -0.26
+|   |   |--- drpair_s3_s4 <= -0.04
+|   |   |   |--- class: 1
+|   |   |--- drpair_s3_s4 >  -0.04
+|   |   |   |--- drcomp_s6 <= 1.62
+|   |   |   |   |--- class: 1
+|   |   |   |--- drcomp_s6 >  1.62
+|   |   |   |   |--- class: 1
+
+
+===== Outer repeat 3 | params {'max_depth': 4, 'min_samples_leaf': 1, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.11
+|   |--- drpair_s11_s12 <= -0.25
+|   |   |--- drcomp_s3 <= -0.47
+|   |   |   |--- alpha_EMAd_0.1vs0.001_s8 <= 3.97
+|   |   |   |   |--- class: 5
+|   |   |   |--- alpha_EMAd_0.1vs0.001_s8 >  3.97
+|   |   |   |   |--- class: 3
+|   |   |--- drcomp_s3 >  -0.47
+|   |   |   |--- drcomp_s5 <= 0.11
+|   |   |   |   |--- class: 4
+|   |   |   |--- drcomp_s5 >  0.11
+|   |   |   |   |--- class: 0
+|   |--- drpair_s11_s12 >  -0.25
+|   |   |--- drpair_s2_s6 <= 0.65
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.08
+|   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.08
+|   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.65
+|   |   |   |--- drpair_s3_s12 <= 0.30
+|   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s3_s12 >  0.30
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.11
+|   |--- drpair_s7_s14 <= -0.29
+|   |   |--- drpair_s5_s6 <= 0.31
+|   |   |   |--- alpha_EMAi_0.1vs0.001_s2 <= -1.59
+|   |   |   |   |--- class: 4
+|   |   |   |--- alpha_EMAi_0.1vs0.001_s2 >  -1.59
+|   |   |   |   |--- class: 2
+|   |   |--- drpair_s5_s6 >  0.31
+|   |   |   |--- drpair_s2_s11 <= 0.61
+|   |   |   |   |--- class: 1
+|   |   |   |--- drpair_s2_s11 >  0.61
+|   |   |   |   |--- class: 0
+|   |--- drpair_s7_s14 >  -0.29
+|   |   |--- drpair_s4_s16 <= 1.01
+|   |   |   |--- slog_s4_EMAi0.01 <= 4.40
+|   |   |   |   |--- class: 1
+|   |   |   |--- slog_s4_EMAi0.01 >  4.40
+|   |   |   |   |--- class: 0
+|   |   |--- drpair_s4_s16 >  1.01
+|   |   |   |--- drpair_s2_s9 <= 0.36
+|   |   |   |   |--- class: 2
+|   |   |   |--- drpair_s2_s9 >  0.36
+|   |   |   |   |--- class: 1
+
+
+===== Outer repeat 4 | params {'max_depth': 5, 'min_samples_leaf': 1, 'class_weight': None} =====
+|--- drcomp_s11 <= 0.52
+|   |--- drpair_s2_s6 <= 0.82
+|   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.09
+|   |   |   |--- drpair_s4_s8 <= -0.40
+|   |   |   |   |--- alpha_EMAi_0.01vs0.001_s5 <= -1.24
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- alpha_EMAi_0.01vs0.001_s5 >  -1.24
+|   |   |   |   |   |--- class: 5
+|   |   |   |--- drpair_s4_s8 >  -0.40
+|   |   |   |   |--- drpair_s8_s15 <= 1.22
+|   |   |   |   |   |--- class: 3
+|   |   |   |   |--- drpair_s8_s15 >  1.22
+|   |   |   |   |   |--- class: 2
+|   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.09
+|   |   |   |--- drcomp_s12 <= -0.03
+|   |   |   |   |--- slog_s16_absDR <= -1.33
+|   |   |   |   |   |--- class: 3
+|   |   |   |   |--- slog_s16_absDR >  -1.33
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- drcomp_s12 >  -0.03
+|   |   |   |   |--- drcomp_s10 <= -0.17
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- drcomp_s10 >  -0.17
+|   |   |   |   |   |--- class: 2
+|   |--- drpair_s2_s6 >  0.82
+|   |   |--- drpair_s11_s12 <= -0.55
+|   |   |   |--- drpair_s6_s8 <= 6.13
+|   |   |   |   |--- class: 5
+|   |   |   |--- drpair_s6_s8 >  6.13
+|   |   |   |   |--- class: 0
+|   |   |--- drpair_s11_s12 >  -0.55
+|   |   |   |--- drpair_s11_s12 <= 0.95
+|   |   |   |   |--- drpair_s5_s13 <= -1.48
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- drpair_s5_s13 >  -1.48
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s11_s12 >  0.95
+|   |   |   |   |--- drpair_s9_s14 <= 1.85
+|   |   |   |   |   |--- class: 3
+|   |   |   |   |--- drpair_s9_s14 >  1.85
+|   |   |   |   |   |--- class: 4
+|--- drcomp_s11 >  0.52
+|   |--- drpair_s4_s15 <= 0.73
+|   |   |--- balance_s11_a0.1 <= 3.19
+|   |   |   |--- alpha_EMAd_0.1vs0.001_s5 <= 1.87
+|   |   |   |   |--- slog_s1_EMAi0.001 <= -1.59
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- slog_s1_EMAi0.001 >  -1.59
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- alpha_EMAd_0.1vs0.001_s5 >  1.87
+|   |   |   |   |--- class: 0
+|   |   |--- balance_s11_a0.1 >  3.19
+|   |   |   |--- class: 0
+|   |--- drpair_s4_s15 >  0.73
+|   |   |--- slog_s4_absDR <= -1.40
+|   |   |   |--- slog_s12_EMAd0.001 <= 2.67
+|   |   |   |   |--- class: 0
+|   |   |   |--- slog_s12_EMAd0.001 >  2.67
+|   |   |   |   |--- class: 1
+|   |   |--- slog_s4_absDR >  -1.40
+|   |   |   |--- class: 2
+
+
+===== Outer repeat 5 | params {'max_depth': 5, 'min_samples_leaf': 50, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.12
+|   |--- drpair_s11_s12 <= -0.30
+|   |   |--- drpair_s2_s3 <= 0.61
+|   |   |   |--- class: 5
+|   |   |--- drpair_s2_s3 >  0.61
+|   |   |   |--- alpha_EMAd_0.01vs0.001_s10 <= -0.31
+|   |   |   |   |--- class: 5
+|   |   |   |--- alpha_EMAd_0.01vs0.001_s10 >  -0.31
+|   |   |   |   |--- balance_s3_a0.1 <= -0.96
+|   |   |   |   |   |--- class: 5
+|   |   |   |   |--- balance_s3_a0.1 >  -0.96
+|   |   |   |   |   |--- class: 5
+|   |--- drpair_s11_s12 >  -0.30
+|   |   |--- drpair_s2_s6 <= 0.63
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.09
+|   |   |   |   |--- drpair_s5_s10 <= -0.76
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- drpair_s5_s10 >  -0.76
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.09
+|   |   |   |   |--- slog_s3_EMAi0.01 <= -0.37
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- slog_s3_EMAi0.01 >  -0.37
+|   |   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.63
+|   |   |   |--- drpair_s3_s7 <= 0.10
+|   |   |   |   |--- drpair_s5_s14 <= -1.09
+|   |   |   |   |   |--- class: 4
+|   |   |   |   |--- drpair_s5_s14 >  -1.09
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s3_s7 >  0.10
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.12
+|   |--- drpair_s7_s14 <= -0.27
+|   |   |--- drpair_s13_s16 <= 1.27
+|   |   |   |--- class: 2
+|   |   |--- drpair_s13_s16 >  1.27
+|   |   |   |--- alpha_EMAd_0.01vs0.001_s5 <= 0.44
+|   |   |   |   |--- class: 2
+|   |   |   |--- alpha_EMAd_0.01vs0.001_s5 >  0.44
+|   |   |   |   |--- class: 2
+|   |--- drpair_s7_s14 >  -0.27
+|   |   |--- balance_s5_a0.01 <= -1.52
+|   |   |   |--- class: 1
+|   |   |--- balance_s5_a0.01 >  -1.52
+|   |   |   |--- slog_s15_absDR <= -0.60
+|   |   |   |   |--- class: 1
+|   |   |   |--- slog_s15_absDR >  -0.60
+|   |   |   |   |--- slog_s12_EMAd0.01 <= -1.80
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- slog_s12_EMAd0.01 >  -1.80
+|   |   |   |   |   |--- class: 1
+
+
+===== Outer repeat 6 | params {'max_depth': 5, 'min_samples_leaf': 50, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.11
+|   |--- drpair_s11_s12 <= -0.24
+|   |   |--- drpair_s2_s3 <= 0.59
+|   |   |   |--- class: 5
+|   |   |--- drpair_s2_s3 >  0.59
+|   |   |   |--- alpha_EMAd_0.01vs0.001_s10 <= -0.33
+|   |   |   |   |--- class: 5
+|   |   |   |--- alpha_EMAd_0.01vs0.001_s10 >  -0.33
+|   |   |   |   |--- balance_s3_a0.1 <= -0.94
+|   |   |   |   |   |--- class: 5
+|   |   |   |   |--- balance_s3_a0.1 >  -0.94
+|   |   |   |   |   |--- class: 5
+|   |--- drpair_s11_s12 >  -0.24
+|   |   |--- drpair_s2_s6 <= 0.63
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.08
+|   |   |   |   |--- drpair_s4_s10 <= -0.95
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- drpair_s4_s10 >  -0.95
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.08
+|   |   |   |   |--- slog_s3_DR <= -1.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- slog_s3_DR >  -1.00
+|   |   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.63
+|   |   |   |--- drpair_s3_s7 <= 0.09
+|   |   |   |   |--- drpair_s5_s13 <= -1.27
+|   |   |   |   |   |--- class: 4
+|   |   |   |   |--- drpair_s5_s13 >  -1.27
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s3_s7 >  0.09
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.11
+|   |--- drpair_s4_s15 <= 0.74
+|   |   |--- alpha_EMAd_0.1vs0.001_s4 <= 1.27
+|   |   |   |--- balance_s4_a0.1 <= -0.43
+|   |   |   |   |--- class: 1
+|   |   |   |--- balance_s4_a0.1 >  -0.43
+|   |   |   |   |--- alpha_EMAi_0.1vs0.001_s1 <= -1.52
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- alpha_EMAi_0.1vs0.001_s1 >  -1.52
+|   |   |   |   |   |--- class: 1
+|   |   |--- alpha_EMAd_0.1vs0.001_s4 >  1.27
+|   |   |   |--- class: 1
+|   |--- drpair_s4_s15 >  0.74
+|   |   |--- drpair_s9_s11 <= -0.26
+|   |   |   |--- class: 2
+|   |   |--- drpair_s9_s11 >  -0.26
+|   |   |   |--- class: 2
+
+
+===== Outer repeat 7 | params {'max_depth': 5, 'min_samples_leaf': 50, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.12
+|   |--- drpair_s11_s12 <= -0.25
+|   |   |--- drpair_s2_s3 <= 0.60
+|   |   |   |--- class: 5
+|   |   |--- drpair_s2_s3 >  0.60
+|   |   |   |--- slog_s9_EMAd0.01 <= -0.94
+|   |   |   |   |--- class: 5
+|   |   |   |--- slog_s9_EMAd0.01 >  -0.94
+|   |   |   |   |--- class: 5
+|   |--- drpair_s11_s12 >  -0.25
+|   |   |--- drpair_s2_s6 <= 0.63
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.09
+|   |   |   |   |--- drpair_s4_s10 <= -0.96
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- drpair_s4_s10 >  -0.96
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.09
+|   |   |   |   |--- slog_s3_EMAi0.01 <= -0.37
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- slog_s3_EMAi0.01 >  -0.37
+|   |   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.63
+|   |   |   |--- drpair_s3_s7 <= 0.09
+|   |   |   |   |--- drpair_s6_s13 <= -1.09
+|   |   |   |   |   |--- class: 4
+|   |   |   |   |--- drpair_s6_s13 >  -1.09
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s3_s7 >  0.09
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.12
+|   |--- drpair_s7_s14 <= -0.27
+|   |   |--- alpha_EMAd_0.01vs0.001_s15 <= 0.07
+|   |   |   |--- slog_s3_EMAi0.1 <= -1.49
+|   |   |   |   |--- class: 2
+|   |   |   |--- slog_s3_EMAi0.1 >  -1.49
+|   |   |   |   |--- class: 2
+|   |   |--- alpha_EMAd_0.01vs0.001_s15 >  0.07
+|   |   |   |--- class: 2
+|   |--- drpair_s7_s14 >  -0.27
+|   |   |--- drpair_s3_s4 <= -0.03
+|   |   |   |--- class: 1
+|   |   |--- drpair_s3_s4 >  -0.03
+|   |   |   |--- alpha_EMAd_0.01vs0.001_s7 <= -0.91
+|   |   |   |   |--- class: 1
+|   |   |   |--- alpha_EMAd_0.01vs0.001_s7 >  -0.91
+|   |   |   |   |--- class: 1
+
+
+===== Outer repeat 8 | params {'max_depth': 5, 'min_samples_leaf': 50, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.07
+|   |--- drpair_s11_s12 <= -0.25
+|   |   |--- drpair_s2_s3 <= 0.60
+|   |   |   |--- class: 5
+|   |   |--- drpair_s2_s3 >  0.60
+|   |   |   |--- drpair_s4_s11 <= -0.79
+|   |   |   |   |--- class: 5
+|   |   |   |--- drpair_s4_s11 >  -0.79
+|   |   |   |   |--- class: 5
+|   |--- drpair_s11_s12 >  -0.25
+|   |   |--- drpair_s2_s6 <= 0.63
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.09
+|   |   |   |   |--- drpair_s4_s10 <= -0.96
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- drpair_s4_s10 >  -0.96
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.09
+|   |   |   |   |--- slog_s3_absDR <= -1.18
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- slog_s3_absDR >  -1.18
+|   |   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.63
+|   |   |   |--- drpair_s11_s12 <= 0.80
+|   |   |   |   |--- drpair_s5_s13 <= -1.26
+|   |   |   |   |   |--- class: 4
+|   |   |   |   |--- drpair_s5_s13 >  -1.26
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s11_s12 >  0.80
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.07
+|   |--- drpair_s7_s14 <= -0.28
+|   |   |--- alpha_EMAd_0.01vs0.001_s16 <= 0.09
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= -1.45
+|   |   |   |   |--- class: 2
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  -1.45
+|   |   |   |   |--- class: 2
+|   |   |--- alpha_EMAd_0.01vs0.001_s16 >  0.09
+|   |   |   |--- class: 2
+|   |--- drpair_s7_s14 >  -0.28
+|   |   |--- drpair_s3_s4 <= -0.03
+|   |   |   |--- class: 1
+|   |   |--- drpair_s3_s4 >  -0.03
+|   |   |   |--- drcomp_s6 <= 1.62
+|   |   |   |   |--- class: 1
+|   |   |   |--- drcomp_s6 >  1.62
+|   |   |   |   |--- class: 1
+
+
+===== Outer repeat 9 | params {'max_depth': 5, 'min_samples_leaf': 50, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.12
+|   |--- drpair_s11_s12 <= -0.19
+|   |   |--- drpair_s2_s3 <= 0.58
+|   |   |   |--- class: 5
+|   |   |--- drpair_s2_s3 >  0.58
+|   |   |   |--- alpha_EMAd_0.1vs0.001_s14 <= -0.11
+|   |   |   |   |--- class: 5
+|   |   |   |--- alpha_EMAd_0.1vs0.001_s14 >  -0.11
+|   |   |   |   |--- alpha_EMAd_0.01vs0.001_s16 <= -1.19
+|   |   |   |   |   |--- class: 5
+|   |   |   |   |--- alpha_EMAd_0.01vs0.001_s16 >  -1.19
+|   |   |   |   |   |--- class: 5
+|   |--- drpair_s11_s12 >  -0.19
+|   |   |--- drpair_s2_s6 <= 0.63
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.04
+|   |   |   |   |--- drpair_s4_s10 <= -0.86
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- drpair_s4_s10 >  -0.86
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.04
+|   |   |   |   |--- slog_s3_DR <= -0.98
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- slog_s3_DR >  -0.98
+|   |   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.63
+|   |   |   |--- drpair_s3_s7 <= 0.09
+|   |   |   |   |--- drpair_s5_s14 <= -1.06
+|   |   |   |   |   |--- class: 4
+|   |   |   |   |--- drpair_s5_s14 >  -1.06
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s3_s7 >  0.09
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.12
+|   |--- drpair_s7_s14 <= -0.27
+|   |   |--- alpha_EMAi_0.01vs0.001_s9 <= -1.45
+|   |   |   |--- class: 2
+|   |   |--- alpha_EMAi_0.01vs0.001_s9 >  -1.45
+|   |   |   |--- drpair_s7_s8 <= -0.63
+|   |   |   |   |--- class: 2
+|   |   |   |--- drpair_s7_s8 >  -0.63
+|   |   |   |   |--- class: 2
+|   |--- drpair_s7_s14 >  -0.27
+|   |   |--- drpair_s3_s4 <= -0.03
+|   |   |   |--- class: 1
+|   |   |--- drpair_s3_s4 >  -0.03
+|   |   |   |--- drpair_s6_s15 <= 0.49
+|   |   |   |   |--- class: 1
+|   |   |   |--- drpair_s6_s15 >  0.49
+|   |   |   |   |--- class: 1
+
+
+===== Outer repeat 10 | params {'max_depth': 5, 'min_samples_leaf': 20, 'class_weight': 'balanced'} =====
+|--- drcomp_s4 <= 0.07
+|   |--- drpair_s11_s12 <= -0.24
+|   |   |--- drpair_s2_s3 <= 0.48
+|   |   |   |--- class: 0
+|   |   |--- drpair_s2_s3 >  0.48
+|   |   |   |--- slog_s9_EMAd0.01 <= -1.28
+|   |   |   |   |--- class: 5
+|   |   |   |--- slog_s9_EMAd0.01 >  -1.28
+|   |   |   |   |--- class: 5
+|   |--- drpair_s11_s12 >  -0.24
+|   |   |--- drpair_s2_s6 <= 0.63
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 <= 0.08
+|   |   |   |   |--- drpair_s4_s10 <= -0.95
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- drpair_s4_s10 >  -0.95
+|   |   |   |   |   |--- class: 3
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s11 >  0.08
+|   |   |   |   |--- slog_s3_absDR <= -1.46
+|   |   |   |   |   |--- class: 3
+|   |   |   |   |--- slog_s3_absDR >  -1.46
+|   |   |   |   |   |--- class: 0
+|   |   |--- drpair_s2_s6 >  0.63
+|   |   |   |--- drpair_s3_s7 <= 0.10
+|   |   |   |   |--- drpair_s5_s14 <= -1.22
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- drpair_s5_s14 >  -1.22
+|   |   |   |   |   |--- class: 4
+|   |   |   |--- drpair_s3_s7 >  0.10
+|   |   |   |   |--- class: 3
+|--- drcomp_s4 >  0.07
+|   |--- drpair_s7_s14 <= -0.28
+|   |   |--- drpair_s7_s8 <= -0.32
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s4 <= -1.72
+|   |   |   |   |--- class: 2
+|   |   |   |--- alpha_EMAi_0.01vs0.001_s4 >  -1.72
+|   |   |   |   |--- slog_s9_EMAi0.1 <= -0.20
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- slog_s9_EMAi0.1 >  -0.20
+|   |   |   |   |   |--- class: 2
+|   |   |--- drpair_s7_s8 >  -0.32
+|   |   |   |--- class: 1
+|   |--- drpair_s7_s14 >  -0.28
+|   |   |--- drpair_s3_s4 <= -0.04
+|   |   |   |--- class: 1
+|   |   |--- drpair_s3_s4 >  -0.04
+|   |   |   |--- drpair_s8_s16 <= -0.14
+|   |   |   |   |--- slog_s4_EMAi0.001 <= 0.74
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- slog_s4_EMAi0.001 >  0.74
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- drpair_s8_s16 >  -0.14
+|   |   |   |   |--- class: 1
