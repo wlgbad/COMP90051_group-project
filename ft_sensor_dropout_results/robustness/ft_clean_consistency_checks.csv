@@ -1,0 +1,11 @@
+outer_repeat,passed,dropout_clean_macro_f1,n_test,note
+1,True,0.8207837854140713,3491,Augmented model is not expected to reproduce baseline clean predictions
+2,True,0.7171963154868141,3491,Augmented model is not expected to reproduce baseline clean predictions
+3,True,0.6477329093042253,3491,Augmented model is not expected to reproduce baseline clean predictions
+4,True,0.7314272859257865,3491,Augmented model is not expected to reproduce baseline clean predictions
+5,True,0.7312518075035506,3491,Augmented model is not expected to reproduce baseline clean predictions
+6,True,0.7028683866479485,3491,Augmented model is not expected to reproduce baseline clean predictions
+7,True,0.7072548163913219,3491,Augmented model is not expected to reproduce baseline clean predictions
+8,True,0.6945854833126733,3491,Augmented model is not expected to reproduce baseline clean predictions
+9,True,0.7654776641001888,3491,Augmented model is not expected to reproduce baseline clean predictions
+10,True,0.7442373195293411,3491,Augmented model is not expected to reproduce baseline clean predictions

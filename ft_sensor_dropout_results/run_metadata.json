@@ -1,0 +1,14 @@
+{
+  "protocol_version": "FT_SENSOR_DROPOUT_AUGMENTATION_V1",
+  "base_signature": "66f5e498e1fdff65574c20b4292c20c8d5aff94ca9bea74a9b5a610cd039e92c",
+  "source_result_manifest_sha256": "a69895ef2eceffb799a96729be0425be2ca6c3af2399e3f7670b285d7888cd47",
+  "patterns_sha256": "d5a51d130038e4c9c7c8d9fdcbe918f464fd584559349cc7f4586d7da868ce85",
+  "training_augmentation": "clean plus one copy per training row, k ~ discrete uniform 1..8",
+  "mask_rng": "numpy.default_rng([SEED,1,outer_repeat])",
+  "sensor_values": "outer-training raw mean before 396-D feature construction",
+  "pipeline": "fit on clean outer train only",
+  "hyperparameters": "reuse same selected LR, epochs and architecture as original FT",
+  "training_batch_size": 64,
+  "inference_batch_size": 64,
+  "signature": "9578b16860dd7d916e725b8e9a0cb8e503eedded894a98790b40e0a3cfe698ed"
+}

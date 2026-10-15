@@ -1,0 +1,16 @@
+{
+  "protocol_version": "FT_FINAL_SHARED_RAW_MEAN_V1",
+  "source_phase": "ft_final",
+  "model_signature": "66f5e498e1fdff65574c20b4292c20c8d5aff94ca9bea74a9b5a610cd039e92c",
+  "source_input_sha256": {
+    "phase1_output/gas_sensor_clean.csv": "dc3b3e3ff1692418c9fc5d18b501382e2ff8d93446b450d863eca3a22e77bad0",
+    "phase1_output/temporal_outer_splits.json": "e7fc7a07664b38a743e80171ec4f11407652cfa6feb4f05e72f78a179e20e91d",
+    "shared/shared_features.py": "e89ee08f970ed123faa0fa088bac022fa684425a1b749a8f22171d2dc68fa91e",
+    "shared/shared_protocol.py": "504b988c8f3a02c7d2f9c0dae3405c25229eceedb6cecc5aba30edd360d4c459",
+    "shared/shared_metrics.py": "0225298d8d51547f7ee88e7875ec966a923115ab1a96ba60046bde6a26fb1102"
+  },
+  "pattern_file_sha256": "d5a51d130038e4c9c7c8d9fdcbe918f464fd584559349cc7f4586d7da868ce85",
+  "corruption_mode": "raw_mean_before_396_feature_construction",
+  "note": "SD across outer-repeat means; masks are averaged within each repeat",
+  "signature": "b89661b5ad1d5c3d8dfccdb00c12575fece6ad523438af45ed0616dc1175d19f"
+}
