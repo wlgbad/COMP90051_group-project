@@ -48,8 +48,8 @@ FEATURE_NAMES = feature_names()  # 396 constructed features
 # 5 x 3 x 2 = 30 combos; a single tree is cheap, so a wider grid is fine
 # ---------------------------------------------------------------------------
 PARAM_GRID = {
-    "max_depth": [2, 3, 4, 5, 6],
-    "min_samples_leaf": [1, 20, 50],
+    "max_depth": [3, 4, 5],
+    "min_samples_leaf": [50, 100, 200],
     "class_weight": [None, "balanced"],
 }
 FIXED_PARAMS = {
@@ -215,8 +215,20 @@ def main() -> None:
         "n_failed_sensors", "macro_f1_mean",
         "macro_f1_sd_across_outer_repeats", "retained_fraction_mean",
     ]].to_string(index=False))
+    
+    # ---- Check: most frequently chosen value should be the middle one ----
+    print("\n=== Selected hyperparameters across 10 outer repeats ===")
+    for key, grid in PARAM_GRID.items():
+            counts = clean_df[f"best_{key}"].value_counts()
+            print(f"{key}: {counts.to_dict()}")
+            if len(grid) >= 3:  # 分类变量（如 class_weight 只有 2 个值）不适用
+                middle = str(grid[len(grid) // 2])
+                mode = counts.idxmax()
+                status = "OK" if mode == middle else f"WARNING: mode={mode}, middle={middle}"
+                print(f"  -> {status}")
     print(f"\nAll outputs saved to {OUT_DIR}")
 
 
 if __name__ == "__main__":
     main()
+   
